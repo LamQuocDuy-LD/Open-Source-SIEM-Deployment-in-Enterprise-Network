@@ -1,0 +1,24 @@
+# Simulation Scenario 02: Sensitive File Modification
+
+## Overview
+Simulate a post-compromise attack scenario where an attacker attempts to modify system configurations after gaining access to the system. The objective is to verify the FIM (File Integrity Monitoring) capabilities of the Wazuh Agent on the Linux platform.
+
+## Scenario Parameters
+- **Actor / Source**: Internal User - Ubuntu
+- **Attack Target**: Modifying critical configuration files within the /etc/ directory.
+
+## Monitoring Objectives:
+- Verify the capability to detect file events: Creation, Modification, and Deletion.
+- Monitor modified attributes such as file size, hash values, access permissions, and ownership.
+- Identify the user or process responsible for the modification.
+
+## Command Execution
+```
+sudo touch /etc/wazuh_test_file.conf
+
+echo "# Unauthorized modification test" | sudo tee -a /etc/hosts
+
+sudo chmod 777 /etc/wazuh_test_file.conf
+
+sudo rm /etc/wazuh_test_file.conf
+```
