@@ -2,6 +2,7 @@
 
 <div align="center">
    
+[![Virtualization - VMware Workstation](https://img.shields.io/badge/Virtualization-VMware_Workstation_17-blue?style=flat-square&logo=vmware&logoColor=white)](https://www.vmware.com/)
 [![SIEM - Wazuh](https://img.shields.io/badge/SIEM-Wazuh%20v4.14.2-blue?style=flat-square&logo=wazuh)](https://wazuh.com/)
 [![Firewall - pfSense](https://img.shields.io/badge/Firewall-pfSense%20v2.8.1-orange?style=flat-square&logo=pfsense)](https://www.pfsense.org/)
 [![IDS/IPS - Suricata](https://img.shields.io/badge/IDS%2FIPS-Suricata-red?style=flat-square)](https://suricata.io/)
