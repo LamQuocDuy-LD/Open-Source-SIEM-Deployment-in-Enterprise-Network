@@ -38,7 +38,7 @@ This project focuses on deploying an open-source Security Information and Event 
 ## <div id="1" align="center"> Network Architecture Diagram & System Segmentation </div>
 
 | No. | Diagram Name | Function | Scope |
-| :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- |
 | 1 | **Detailed Logical Network Diagram** | Illustrates the complete realistic enterprise network architecture, integrating multi-WAN links, clear segmentation via Firewall, Core Switch, and independent IDS/IPS. | Entire enterprise system (Production-ready design) |
 | 2 | **Simplified Logical Network Diagram** | Consolidates the structure to optimize virtualization resources on a single workstation for simulating core security functions and conducting security attack/monitoring experiments. | Lab simulation environment (VMware Workstation) |
 
@@ -126,7 +126,7 @@ The project executes three simulated attack scenarios to validate the defense ca
 ### <div align="center"> Technology Stack Used in Virtualization </div>
 
 | No. | System Component | Tool / Deployed Software | Version / Configuration Details |
-| :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- |
 | 1 | **Infrastructure Virtualization** | VMware Workstation Pro | Version 17 |
 | 2 | **Server Operating System** | AlmaLinux | Version 9.7 (For Web Server and SOC Server) |
 | 3 | **Client Operating System** | Windows 10 & Ubuntu LTS | Windows 10 Pro & Ubuntu 24.04.3 LTS |
@@ -139,7 +139,7 @@ The project executes three simulated attack scenarios to validate the defense ca
 ### <div align="center"> System Security Design Philosophy </div>
 
 | No. | Design Philosophy | Practical Application |
-| :--- | :--- | :--- |
+| :---: | :--- | :--- |
 | 1 | **Defense-in-Depth** | Integrates multiple independent security layers: The boundary layer uses a Firewall for service port filtering combined with an Inline IPS for proactive malware blocking; the server/workstation layer uses Wazuh Agents to collect local logs, monitor system integrity, and analyze end-user behavior. |
 | 2 | **Network Segmentation & Isolation** | Completely separates the system into 3 distinct security zones (WAN - DMZ - LOCAL). Firewall rules strictly regulate access between zones, absolutely prohibiting DMZ from initiating reverse connections to LOCAL to stop lateral movement (Lateral Movement) risks. |
 | 3 | **Least Privilege** | Establishes specific website access permissions and blocks sensitive website system files. Applies restriction and immediate account lockout policies on Windows Local Security Policy upon detecting abnormal password brute-forcing. |
