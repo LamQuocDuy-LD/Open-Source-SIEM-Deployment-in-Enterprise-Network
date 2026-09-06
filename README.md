@@ -179,6 +179,10 @@ The project is fully open to the community. You are free to use, copy, and modif
 
 ## <div id="8" align="center"> Contributors </div>
 
+* **Project Timeline**
+   * **Start Date:** 22/01/2026
+   * **Completion Date:** 19/03/2026
+   * **Total Duration:** 57 days
 *   This entire repository (including system design and virtualization) was independently developed and fully implemented by Lam Quoc Duy.
 *   **Note**: This is part of an overall project consisting of 3 members, with Lam Quoc Duy serving as the coordinating Team Leader. Other documents and items are handled by the remaining members and fall outside the scope of this repository.
 
